@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset=" UTF-8">
+    <title>Contacto - Barberia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="caja">
+
+            <h1>
+                <img src="imagenes/logo.png" alt="Logo de la Barberia Alura">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Producto</a></li>
+                    <li><a href="CONTACTO.html">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <form>
+            <!--Datos personales-->
+            <label for="nombreapellido">Nombre y apellido</label>
+            <input id="nombreapellido" type="text" class="input-padron" required>
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX)-XXX-XXXX">
+
+
+            <!--Mensaje del usuario a la peluqueria-->
+            <label for="Mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="Mensaje" class="input-padron" required></textarea>
+
+
+            <fieldset> <!--Etiqueta utilizada para agrupar elementos que hacen referencia a lo mismo
+                            no utilizamos div en este caso.-->
+
+                <legend>¿Cómo le gustaría ser contactado?</legend>
+                <!--Para agregar contenido a dentro de la etiqueta fieldset, se utiliza legend en sustitucion de la etiqueta p de parrafo. Esto como buenas practicas en la construccion de nuestro código html.-->
+
+                <!--Vias preferidaas para contactar al cliente-->
+                <label for="radio-email"><input type="radio" name="contacto" value="Email"
+                        id="radio-email">Email</label>
+
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Teléfono</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>¿En que horario le gustaría ser atendido?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+
+            </fieldset>
+
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia</label>
+
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+
+        </form>
+
+        <table>
+
+            <thead>
+                <tr> <!--Filas dentro del encabezado-->
+                    <th>Dia</th> <!-- Columnas dentro del encabezado-->
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><!--Filas-->
+                    <td>Lunes</td> <!--Columnas dentro del cuerpo de la tabla-->
+                    <td>8 ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Miercoles</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+        <p class="copyright">&copy Copyright Barberia Alura - 2024</p>
+    </footer>
+
+</body>
+
+</html>
